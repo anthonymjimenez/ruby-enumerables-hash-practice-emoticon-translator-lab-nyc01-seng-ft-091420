@@ -2,14 +2,14 @@
 require "yaml"
 def load_library(path)
   # code goes here
-  emoticons = YAML.load_file(path)
-  newEmoticons = {}
+  yaml = YAML.load_file(path)
+  emoticons = {}
 
-  emoticons.each { |key, value|
-    newEmoticon[key] = [english: value[0], japanese: value[1]]
+  yaml.each { |key, value|
+    emoticons[key] = [english: value[0], japanese: value[1]]
   }
 
-  newEmoticons
+  emoticons
 
 end
 
