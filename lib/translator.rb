@@ -12,7 +12,7 @@ def get_japanese_emoticon(path, emoticon)
   emoticons.each { |key, value|
     value.map { |e|
       if(e === emoticon)
-        return key
+        return value[1]
       end
       }
   }
@@ -23,7 +23,7 @@ def get_english_meaning(path, emoticon)
   emoticons.each { |key, value|
     value.map { |e|
       if(e === emoticon)
-        return key
+        return value[0]
       end
       }
   }
