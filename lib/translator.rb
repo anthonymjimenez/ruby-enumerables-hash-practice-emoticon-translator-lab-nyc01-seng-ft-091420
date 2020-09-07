@@ -29,10 +29,9 @@ end
 def get_english_meaning(path, emoticon)
   emoticons = load_library(path)
   emoticons.each { |key, value|
-    value.map { |e|
-      if(e === emoticon)
-        return key
-      end
+      value.each { | nKey, nValue|
+        if(nValue === emoticon)
+          return key
       }
   }
 end
