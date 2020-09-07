@@ -18,9 +18,9 @@ def get_japanese_emoticon(path, emoticon)
   # code goes here
   emoticons = load_library(path)
   emoticons.each { |key, value|
-    value.map { |e|
-      if(e === emoticon)
-        return value[1]
+    emoticons.each { |nKey, nValue|
+      if(nValue === emoticon)
+        return emoticons[key][:english]
       end
       }
   }
