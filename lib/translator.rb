@@ -6,7 +6,7 @@ def load_library(path)
   emoticons = {}
 
   yaml.each { |key, value|
-    emoticons[key] = [english: value[0], japanese: value[1]]
+    emoticons[key] = { english: value[0], japanese: value[1] }
   }
 
   emoticons
