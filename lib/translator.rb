@@ -9,7 +9,7 @@ def load_library(path)
     newEmoticon[key] = [english: value[0], japanese: value[1]]
   }
 
-  emoticons
+  newEmoticons
 
 end
 
