@@ -20,7 +20,7 @@ def get_japanese_emoticon(path, emoticon)
   emoticons.each { |key, value|
     value.each { |nKey, nValue|
       if(nValue == emoticon)
-        return emoticons[key][:english]
+        return emoticons[key][:japanese]
       end
       }
   }
