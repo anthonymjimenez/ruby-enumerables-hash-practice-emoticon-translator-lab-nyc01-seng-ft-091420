@@ -14,13 +14,15 @@ def get_japanese_emoticon(path, emoticon)
       if(e === emoticon)
         return key
       }
-
   }
-
-
-
 end
 
 def get_english_meaning(path, emoticon)
-  # code goes here
+  emoticons = load_library(path)
+  emoticons.each { |key, value|
+    value.map { |e|
+      if(e === emoticon)
+        return key
+      }
+  }
 end
