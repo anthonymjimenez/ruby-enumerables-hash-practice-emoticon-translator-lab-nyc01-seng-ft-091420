@@ -5,10 +5,10 @@ def load_library(path)
   emoticons = YAML.load_file(path)
   newEmoticons = {}
 
-  emoticons.each { |key, value| 
+  emoticons.each { |key, value|
     newEmoticon[key] = [english: value[0], japanese: value[1]]
   }
-  
+
 end
 
 
