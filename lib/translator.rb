@@ -32,6 +32,7 @@ def get_english_meaning(path, emoticon)
       value.each { | nKey, nValue|
         if(nValue === emoticon)
           return key
+        end
       }
   }
 end
