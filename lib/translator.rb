@@ -23,7 +23,7 @@ def get_english_meaning(path, emoticon)
   emoticons.each { |key, value|
     value.map { |e|
       if(e === emoticon)
-        return value[0]
+        return key
       end
       }
   }
