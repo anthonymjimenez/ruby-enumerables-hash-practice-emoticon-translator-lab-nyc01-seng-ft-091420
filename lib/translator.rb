@@ -8,7 +8,16 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
-  emoticons = load_library
+  emoticons = load_library(path)
+  emoticons.each { |key, value|
+    value.map { |e|
+      if(e === emoticon)
+        return key
+      }
+
+  }
+
+
 
 end
 
